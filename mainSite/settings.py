@@ -25,7 +25,10 @@ SECRET_KEY = '172ywor&en0p$eu@w4d+m1r)z11!yilbuoji1ce!l$y1gtr$(a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'calvin-tech.net',
+    'www.calvin-tech.net',
+]
 
 
 # Application definition
