@@ -127,4 +127,4 @@ STATICFILES_DIRS = [
     'var/www/calvin-tech/static',
 ]
 
-STATIC_ROOT = 'var/www/calvin-tech/static/'
+STATIC_ROOT = '/static/'
