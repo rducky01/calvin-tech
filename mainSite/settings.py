@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'mainSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {I was not really understanding the utility of STATIC_ROOT. I thought that it was the directory on which I have to put my common files. This directory is used for the production, this is the directory on which static files will be put (c
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
