@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '172ywor&en0p$eu@w4d+m1r)z11!yilbuoji1ce!l$y1gtr$(a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'calvin-tech.net',
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'mainSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+DATABASES = {I was not really understanding the utility of STATIC_ROOT. I thought that it was the directory on which I have to put my common files. This directory is used for the production, this is the directory on which static files will be put (c
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
@@ -123,7 +123,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
     'var/www/calvin-tech/static/',
 
 ]
