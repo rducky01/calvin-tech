@@ -126,3 +126,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     'var/www/calvin-tech/static',
 ]
+
+STATIC_ROOT = 'var/www/calvin-tech/static/'
