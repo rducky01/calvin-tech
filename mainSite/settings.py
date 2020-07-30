@@ -125,3 +125,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     '/var/www/calvin-tech/static/',
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
