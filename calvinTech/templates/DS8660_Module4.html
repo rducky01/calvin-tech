@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Calvin-Tech.net</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static "vendor/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "css/agency.min.css" %}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/DS8660_Module4#page-top">Big Data Ethics</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Politwoops Case Overview</a>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#politician">The Politician's Perspective</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#twitter">The Twitter Organization's Perspective</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#politwoops">The Politwoops organization's Perspective</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#rights">Rights Based Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#justice">Fairness and Justice Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#utillitarianism">Utilitarian Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#">Back to Main Site</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">DATA_SCI 8660 Module 4 Assignment.</div>
+          <div class="intro-heading text-uppercase">An analysis of the Politwoops case.</div>
+          <div class="intro-heading" style="font-size: 40px;">Spring 2019.</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page content goes here. -->
+    <section  id="overview">
+
+      <!-- Politwoops Case Overview -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>Politwoops Case Overview</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">This case involves a handful of ethical issues relating to data ownership. Specifically, when a Twitter user deletes a tweet, does he have the right to have that data removed from elsewhere on the internet? This is an interesting question with several different ethical implications to be taken into account.</p>
+
+            <p class="text-muted" style="text-indent:2em;">In late 2015, Twitter began blocking access to its application programming interface (referred to as an api) for a number of accounts belonging to Politwoops for violating Twitter’s terms of service. The organization was using the data downloaded via the api to archive deleted tweets of politicians. Overnight the Politwoops service stopped working, causing news feeds to go blank. Of course, Twitter’s action drew the ire of various watchdog groups on the internet, and this ultimately led to the reversal of Twitter’s decision.</p>
+
+            <p class="text-muted" style="text-indent:2em;">In this case analysis we will analyze the situation from the perspective of three main characters; The perspective of <a class="js-scroll-trigger" href="/DS8660_Module4#politician">the politician</a>, who would like to have his or her tweet deleted, the perspective of <a class="js-scroll-trigger" href="/DS8660_Module4#twitter">the Twitter organization</a>, who thought Politwoops was violating its policy, and the perspective of <a class="js-scroll-trigger" href="/DS8660_Module4#politwoops">the Politwoops organization</a>,, who feel they are doing the right thing by archiving the things these politicians delete and are potentially trying to backtrack on. In doing so, we’ll identify three ethical approaches that these characters are taking and explain each one in great detail.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-light" id="politician">
+
+      <!-- The Politician's perspective -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>The Politician's Perspective</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">From the politician’s perspective, he or she is concerned with ensuring that a certain tweet that was posted from the politician’s account is erased. He or she is concerned about the political or cultural ramifications of the tweet, and would like to avoid any fallout that might occur. The politician believes that since they are tweeting from their own account, that they have the right to redact what they say publicly, and have the tweet deleted. Thus the politician is taking a <a class="js-scroll-trigger" href="/DS8660_Module4#rights">rights based approach</a> to the issue.</p>
+
+            <p class="text-muted" style="text-indent:2em;">This approach might be seen as controversial by some, who might argue that by deleting the tweet the politician is trying to hide their true intentions, edit the historical record, and manipulate the sentiments of the politician's constituency. This may not bode well for the politician’s public image.</p>
+
+            <p>
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case Overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="twitter">
+
+      <!-- The Twitter organization's perspective -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>The Twitter Organization's Perspective</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">From the Twitter organization’s perspective, all of its users have a right to the same level of privacy. Part of this privacy includes having the ability to delete tweets. In turning off access to the api, they were helping the user to that end. In doing this Twitter was taking a <a class="js-scroll-trigger" href="/DS8660_Module4#justice">fairness and justice approach</a>.</p>
+
+
+
+            <p>
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case Overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-light" id="politwoops">
+
+      <!-- The Politwoops Organization's perspective -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>The Politwoops Organization's Perspective</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">From the Politwoops perspective, the public has a right to know what the politicians are tweeting about, and by archiving deleted tweets, they are keeping the public informed. This does a service to society and helps avoid cases where a politician may want to hide the truth. This can be seen as a <a class="js-scroll-trigger" href="/DS8660_Module4#utillitarianism">utilitarian approach</a>.</p>
+            <p>
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case Overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="rights">
+
+      <!-- Rights based Approach -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>Rights Based Approach</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">With the <a href="https://www.dsef.org/wp-content/uploads/2012/07/EthicalTheories.pdf" target="_blank">rights based approach</a>, one could argue that certain rights are inalienable, and set by society. In the case of the politician posting on Twitter, one inalienable right that could come into play is the freedom of speech. As the owner of the tweet, the politician has the right to have all instances of the tweet deleted. Within the perspective of the politician, this should include copies of the tweet in theory. </p>
+
+            <p class="text-muted" style="text-indent:2em;">This may be a tall order because everything that happens online is ultimately stored in a log on a server somewhere, and once a tweet is posted it’s fair game for download. Perhaps something is said that is outrageous and someone wants to save it so that they have proof that the comment was made? All they have to do is take a screen shot. So I’m not sure how feasible this may be. Twitter’s answer was to shut off the stream of deleted tweets through the api.</p>
+
+            <p>
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case Overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-light" id="justice">
+
+      <!-- Fairness and Justice Approach -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>Fairness and Justice Approach</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">With the <a href="https://www.dsef.org/wp-content/uploads/2012/07/EthicalTheories.pdf" target="_blank">fairness and justice approach</a> all individuals are treated equally and fairly. As such Twitter felt that it was acting justly in blocking access to deleted tweets from all users, not just the politicians. Twitter felt that as the owner of the tweets, the user should be able to have control over their content.</p>
+
+            <p class="text-muted" style="text-indent:2em;">But was this fair to the Politwoops organization? I’m not so sure. By performing this action, I feel that Twitter came dangerously close to enacting censorship which is a dangerous precedent to set in today’s political climate.</p>
+
+            <p>
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case Overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="utillitarianism">
+
+      <!-- Utilitarian Approach -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md0=-4 col-sm-6">
+            <h4>Utilitarian Approach</h4>
+          </div>
+          <div class="col-md0=-8 col-sm-6">
+            <p class="text-muted" style="text-indent:2em;">With the <a href="https://www.dsef.org/wp-content/uploads/2012/07/EthicalTheories.pdf" target="_blank">utilitarian approach</a> actions are done which provide the best benefit of society and the least amount of harm. In the case of  the Politwoops organization, the organization was acting in the interest helping society by collecting the deleted tweets. The aim was to keep the politicians on a level playing field by keeping all tweeted information in the public arena. This was to act as a sort of check or balance and to aid in objective journalism.</p>
+
+            <p>
+              <a class="nav-link js-scroll-trigger" href="/DS8660_Module4#overview">Back to Case Overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    </sectionclass="bg-light">
+    <section id="plot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 center">
+          </div>
+          <div class="col-lg-6 center">
+            {{ the_div|safe }}
+            {{ the_script|safe }}
+            <div class="col-lg-3 center">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; calvin-tech.net 2019</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/calvsky" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/scalvin/" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+    <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{% static "js/jqBootstrapValidation.js" %}"></script>
+    <script src="{% static "js/contact_me.js" %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static "js/agency.min.js" %}"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+
+  </body>
+
+</html>
