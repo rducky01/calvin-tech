@@ -26,6 +26,7 @@ SECRET_KEY = '172ywor&en0p$eu@w4d+m1r)z11!yilbuoji1ce!l$y1gtr$(a'
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'calvin-tech.net',
     'www.calvin-tech.net',
 ]
@@ -119,10 +120,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT =  '/var/www/calvin-tech/static-root/'
+STATIC_ROOT =  os.path.join(BASE_DIR, 'static-root')
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    '/var/www/calvin-tech/static/',
+    os.path.join(BASE_DIR, 'static'),
 ]
