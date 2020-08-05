@@ -322,6 +322,22 @@
             </div>
           </div>
 
+          <!-- NHL 2016 Season Results -->
+          <div class="col-md-4 col-sm-6 projects-item">
+            <a class="projects-link" data-toggle="modal" href="#projectModal1">
+              <div class="projects-hover">
+                <div class="projects-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static "img/projects/nhl_2016.png" %}" alt="">
+            </a>
+            <div class="projects-caption">
+              <h4>100th NHL Season Results</h4>
+              <p class="text-muted">Here is a brief data story I crafted for an assignment. It showcases my data visualization and story telling capabilities.</p>
+            </div>
+          </div>
+
           <!-- Class Project for Module 4 in Data Sci 8660 -->
           <div class="col-md-4 col-sm-6 projects-item">
             <a class="projects-link" href="DS8660_Module4">
@@ -334,13 +350,10 @@
             </a>
             <div class="projects-caption">
               <h4>DATA_SCI 8660 Module 4 Assignment</h4>
-              <p class="text-muted">A case analysis of the Politwoops case, for Data_Sci 8660, Module 4, Spring 2019.</p>
+              <p class="text-muted">A case analysis of the Politwoops case, for Data_Sci 8660 Data Ethics, Module 4, Spring 2019.</p>
             </div>
           </div>
 
-          <!-- Next Project Here -->
-          <div class="col-md-4 col-sm-6 projects-item">
-          </div>
         </div>
       </div>
     </section>
@@ -597,7 +610,7 @@
 
     <!-- Portfolio Modals -->
 
-    <!-- Modal 1 -->
+    <!-- Resume Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -626,7 +639,7 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Associate in Arts Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -658,7 +671,7 @@
       </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- Bachelor of Arts Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -691,7 +704,7 @@
       </div>
     </div>
 
-    <!-- Modal 4 -->
+    <!-- Snap Appliance Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -725,7 +738,7 @@
       </div>
     </div>
 
-    <!-- Modal 5 -->
+    <!-- Master of Science Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -828,8 +841,8 @@
 
     <!-- Project Modals -->
 
-    <!-- Modal 1
-    <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -841,9 +854,19 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2 class="text-uppercase">2018 KC Crime Data Analysis</h2>
-                  <p class="item-intro text-muted">Just a fun project to demonstrate my data visualization skill.</p>
-                  <img class="img-fluid d-block mx-auto" src="{% static "img/projects/2018_arrests.png" %}" alt="">
+                  <h2 class="text-uppercase">100th NHL Season Results</h2>
+                  <p class="item-intro text-muted">This was a class assignment which showcases my creative data visualization skills. using the ggplot2 package from R's Tidyverse.</p>
+                  <img class="img-fluid d-block mx-auto" src="{% static "img/projects/nhl_2016.png" %}" alt="">
+                  <p>The <a href="https://www.kaggle.com/martinellis/nhl-game-data">dataset</a> I put together tells a story of the 2016 - 2017 NHL season, in which the Pittsburgh Penguins won the Stanley cup. This was the 100th season of the NHL and in honor of that I thought it would be a good season to focus on. What I found incredibly interesting when I started to analyse the data was the finding that there was a mild positive correlation between the number of giveaways per game and the number of games won overall. A giveaway is defined on the NHL's website as "a form of turnover where the player makes an unforced error that results in giving the puck up to the opposition." This finding is counter-intuitive. I would have thought that the more the team kept the puck, the more they would win. The scatterplot above seems to show the opposite.
+                  </br></br>
+                  In the scatterplot we have the average number of shots on goal per game versus the average number of goals per game. While all NHL teams are included here, only those teams that made the Stanley Cup playoffs have a visible team color. The size of the team's dot denotes the average number of giveaways per game.
+                  </br></br>
+                  Perhaps most striking from the shots on goal versus goals scatterplot is the St Louis Blue's figures. The Blues advanced to the third round of the Stanley Cup playoffs that year, despite thier low shots on goal per game and their mediocre scoring. However, they have a significantly smaller rate of giveaways than nearly all of the other teams, especially out of those who made the playoffs. Our champions, the Pittsburgh Penguins averaged a whopping eight giveaways per game.
+                  </br></br>
+                  I wanted to know more about why the Blues' giveaways were so low but they failed to convert the time of possession into more goals. I looked at the goalie stats and found the average number of saves per game. What I found was that the Blues also had a comparatively low rate of goalie saves per game as well. (See below scatterplot.) This correlates with the low giveaway percentage.
+                  </br></br></p>
+                  <img class="img-fluid d-block mx-auto" src="{% static "img/projects/nhl_2016_2.png" %}" alt="">
+                  <p>A more thourough analysis of the dataset could provide further insights and answer other questions such as why Buffalo didn't make the playoffs despite their high save rate and their low giveaways.</p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -854,7 +877,6 @@
         </div>
       </div>
     </div>
-  -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
