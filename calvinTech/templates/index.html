@@ -47,10 +47,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">School Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#career">Career</a>
@@ -161,6 +164,109 @@
         </div>
     </section>
 
+    <!-- Resume Grid -->
+    <section id="resume">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Resume</h2>
+            <p class="text-muted">Here is Skylar's resume. Please click on it to learn more.</p>
+          </div>
+        </div>
+        <div class="row">
+
+          <!-- Blank -->
+          <div class="col-md-4 col-sm-6 resume-item">
+
+          </div>
+
+          <!-- Resume -->
+          <div class="col-md-4 col-sm-6 resume-item">
+            <a class="resume-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="resume-hover">
+                <div class="resume-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static "img/portfolio/resume1.jpg" %}" alt="">
+            </a>
+            <div class="resume-caption">
+            </div>
+          </div>
+
+          <!-- Blank -->
+          <div class="col-md-4 col-sm-6 resume-item">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Grid -->
+    <section class="bg-light" id="education">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Education</h2>
+            <p class="text-muted">Here is Skylar's educational background. Please click on an item to learn more about it.</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <!-- MS Diploma -->
+          <div class="col-md-4 col-sm-6 education-item">
+            <a class="education-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="education-hover">
+                <div class="education-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static "img/portfolio/MS-Diploma.jpg" %}" alt="">
+            </a>
+            <div class="education-caption bg-light">
+              <h4>Master of Science</h4>
+              <p class="text-muted">Data Science and Analytics</p>
+            </div>
+          </div>
+
+          <!-- BA Diploma -->
+          <div class="col-md-4 col-sm-6 education-item">
+              <a class="education-link" data-toggle="modal" href="#portfolioModal3">
+                <div class="education-hover">
+                  <div class="education-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="{% static "img/portfolio/BA-Diploma.jpg" %}" alt="">
+              </a>
+              <div class="education-caption bg-light">
+                <h4>Bachelor of Arts</h4>
+                <p class="text-muted">Mathematical Sciences</p>
+              </div>
+            </div>
+
+          <!-- AA Diploma -->
+          <div class="col-md-4 col-sm-6 education-item">
+            <a class="education-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="education-hover">
+                <div class="education-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static "img/portfolio/AA-Diploma.jpg" %}" alt="">
+            </a>
+            <div class="education-caption bg-light">
+              <h4>Associate in Arts</h4>
+              <p class="text-muted">Mathematics</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Grid -->
     <section id="portfolio">
       <div class="container">
@@ -170,87 +276,48 @@
             <p class="text-muted">Here is Skylar's professional portfolio. Please click on an item to learn more about it.</p>
           </div>
         </div>
+        
         <div class="row">
-
-          <!-- Blank -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-
+          <div class="col-lg-12 text-center">
+            </br>
+            <h4 class="section-heading text-uppercase">Data Science</h3>
+            </br>
           </div>
-
-          <!-- Resume -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{% static "img/portfolio/resume1.jpg" %}" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Resume</h4>
-              <p class="text-muted">My professional background</p>
-            </div>
-          </div>
-
-          <!-- Blank -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-
-          </div>
-
         </div>
+
         <div class="row">
 
-          <!-- MS Diploma -->
+          <!-- Capstone Project -->
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <a class="portfolio-link" href="https://shiny.calvin-tech.net/Capstone_Project/" target = "_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="{% static "img/portfolio/MS-Diploma.jpg" %}" alt="">
+              <img class="img-fluid" src="{% static "img/projects/kcpd_patch.png" %}" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Master of Science</h4>
-              <p class="text-muted">Data Science and Analytics</p>
+              <h4>Masters Degree Capstone Project</h4>
+              <p class="text-muted">This is the final product for my masters degree capstone project. Note that this is a completely different dashboard than the one listed in my portfolio section. Here my classmates and I, a team of four students total, constructed a dashboard for KCPD personnel to help describe major crimes and to attempt to predict hotspots of crime around Kansas City, MO using KCPD crime data, and data from the U. S. Census bureau.</p>
             </div>
           </div>
 
-          <!-- BA Diploma -->
+          <!-- NHL 2016 Season Results -->
           <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="{% static "img/portfolio/BA-Diploma.jpg" %}" alt="">
-              </a>
-              <div class="portfolio-caption">
-                <h4>Bachelor of Arts</h4>
-                <p class="text-muted">Mathematical Sciences</p>
-              </div>
-            </div>
-
-          <!-- AA Diploma -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <a class="portfolio-link" data-toggle="modal" href="#projectModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="{% static "img/portfolio/AA-Diploma.jpg" %}" alt="">
+              <img class="img-fluid" src="{% static "img/projects/nhl_2016.png" %}" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Associate in Arts</h4>
-              <p class="text-muted">Mathematics</p>
+              <h4>100th NHL Season Results</h4>
+              <p class="text-muted">Here is a brief data story I crafted for an assignment. It showcases my data visualization and story telling capabilities.</p>
             </div>
           </div>
-
-        </div>
-        <div class="row">
 
           <!-- KC Crime Project -->
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -260,12 +327,58 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="{% static "img/portfolio/kcpd_patch.png" %}" alt="">
+              <img class="img-fluid" src="{% static "img/projects/kcpdLogo2.png" %}" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Kansas City Crime Data Analysis</h4>
-              <p class="text-muted">An original Shiny dashboard</p>
+              <h4>Kansas City Crime Shiny Dashboard</h4>
+              <p class="text-muted">This original Shiny dashboard was a concept that I developed in R to brainstorm what would ultimately become my masters capstone project, also showcased in this portfolio. While the two portfolio items are similar in topic and content, they showcase two different sets of skills. While the capstone application dives into modeling, this application focuses more on visualizatons and features an interactive heatmap that users can manipulate to find locations of different crimes.</p>
             </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <!-- Blank -->
+          <div class="col-md-4 col-sm-6 portfolio-item">
+
+          </div>
+
+          <!-- Class Project for Module 4 in Data Sci 8660 -->
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="DS8660_Module4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static "img/projects/data_ethics.jpeg" %}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>DATA_SCI 8660 Module 4 Assignment</h4>
+              <p class="text-muted">A case analysis of the Twitter Politwoops case, for Data_Sci 8660 Data Ethics, Module 4, Spring 2019.</p>
+            </div>
+          </div>
+
+          <!-- Blank -->
+          <div class="col-md-4 col-sm-6 portfolio-item">
+
+          </div>
+
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            </br>
+            <h4 class="section-heading text-uppercase">Website Design</h3>
+            </br>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Blank -->
+          <div class="col-md-4 col-sm-6 portfolio-item">
+
           </div>
 
           <!-- Appliancesnap.com Web Design -->
@@ -280,7 +393,6 @@
             </a>
             <div class="portfolio-caption">
               <h4>Appliancesnap.com</h4>
-              <p class="text-muted">Website Design</p>
             </div>
           </div>
 
@@ -289,77 +401,13 @@
 
           </div>
 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="bg-light" id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">School Projects</h2>
-            <p class="text-muted">Here is some noatable project work I accomplished during the the completion of my masters degree program.</p>
-          </div>
         </div>
 
-        <div class="row">
-
-          <!-- Capstone Project -->
-          <div class="col-md-4 col-sm-6 projects-item">
-            <a class="projects-link" href="https://shiny.calvin-tech.net/Capstone_Project/" target = "_blank">
-              <div class="projects-hover">
-                <div class="projects-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{% static "img/projects/kcpd_patch.png" %}" alt="">
-            </a>
-            <div class="projects-caption">
-              <h4>Masters Capstone Project</h4>
-              <p class="text-muted">This is the final product for my masters degree capstone project. Note that this is a completely different dashboard than the one listed in my portfolio section. Here my classmates and I, a team of four students total, constructed a dashboard for KCPD personnel to help describe major crimes and to attempt to predict hotspots of crime around Kansas City, MO using KCPD crime data, and data from the U. S. Census bureau.</p>
-            </div>
-          </div>
-
-          <!-- NHL 2016 Season Results -->
-          <div class="col-md-4 col-sm-6 projects-item">
-            <a class="projects-link" data-toggle="modal" href="#projectModal1">
-              <div class="projects-hover">
-                <div class="projects-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{% static "img/projects/nhl_2016.png" %}" alt="">
-            </a>
-            <div class="projects-caption">
-              <h4>100th NHL Season Results</h4>
-              <p class="text-muted">Here is a brief data story I crafted for an assignment. It showcases my data visualization and story telling capabilities.</p>
-            </div>
-          </div>
-
-          <!-- Class Project for Module 4 in Data Sci 8660 -->
-          <div class="col-md-4 col-sm-6 projects-item">
-            <a class="projects-link" href="DS8660_Module4">
-              <div class="projects-hover">
-                <div class="projects-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{% static "img/projects/data_ethics.jpeg" %}" alt="">
-            </a>
-            <div class="projects-caption">
-              <h4>DATA_SCI 8660 Module 4 Assignment</h4>
-              <p class="text-muted">A case analysis of the Politwoops case, for Data_Sci 8660 Data Ethics, Module 4, Spring 2019.</p>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
 
     <!-- Career -->
-    <section id="career">
+    <section class="bg-light" id="career">
       <div class="container">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Career Highlights</h2>
@@ -434,7 +482,7 @@
                     <h4>2020 - Present</h4>
                     <h4 class="subheading">Freelance Data Scientist at Upwork.com.</h4>
                   </div>
-                  <div class="timeline-body">
+                  <div class="timeline-body">class="bg-light" 
                     <p class="text-muted">Starting in July 2020, I began moonlighting as a Freelance Data Scientist on Upwork.com. I am now taking on mid-to-small sized projects to work on the side and I specialize in Data Analysis, Data Extraction, Data Visualization, Statistical Analysis, PowerBI Development, Natural Language Processing, and Machine Learning.</p>
                   </div>
                 </div>
@@ -453,7 +501,7 @@
     </section>
 
     <!-- Hobbies -->
-    <section class="bg-light" id="hobbies">
+    <section id="hobbies">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -489,7 +537,7 @@
     </section>
 
     <!-- Family -->
-    <section id="family">
+    <section class="bg-light" id="family">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -513,7 +561,7 @@
               </div>
               <img class="img-fluid" src="{% static "img/family/family.jpg" %}" alt="">
             </a>
-            <div class="family-caption">
+            <div class="family-caption bg-light">
               <h4>My Family</h4>
             </div>
           </div>
@@ -721,7 +769,7 @@
                   <h2 class="text-uppercase">ApplianceSnap.com</h2>
                   <p class="item-intro text-muted">A full feature website created and hosted for Snap Appliance Services.</p>
                   <img class="img-fluid d-block mx-auto" src="{% static "img/portfolio/appliancesnap.png" %}" alt="">
-                  <p>I built this website from scrach using Python, Django 2.0, HTML, Bootstrap 4, CSS, and JavaScript. I am also hosting the site from my home data center utilizing an Ubuntu Server and nginx web services. Feel free to check the site out at <a href=https://www.appliancesnap.com>https://www.appliancesnap.com</a></p>
+                  <p>I built this website from scrach using Python, Django 2.0, HTML, Bootstrap 4, CSS, and JavaScript. I am also hosting the site from my home data center utilizing an Ubuntu Server and nginx web services. Feel free to check the site out at <a href=https://www.appliancesnap.com  target = "_blank">https://www.appliancesnap.com</a>.</p>
                   <ul class="list-inline">
                     <li>Date: July 2018</li>
                     <li>Client: Snap Appliance Services</li>

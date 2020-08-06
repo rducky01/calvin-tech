@@ -244,6 +244,16 @@ header.masthead .intro-text .intro-heading {
   margin: 0 0 15px;
 }
 
+#resume .projects-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#education .projects-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -269,6 +279,22 @@ header.masthead .intro-text .intro-heading {
 }
 
 #projects .projects-item .projects-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#resume .resume-item .resume-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#education .education-item .education-link {
   position: relative;
   display: block;
   max-width: 400px;
@@ -320,6 +346,28 @@ header.masthead .intro-text .intro-heading {
   background: rgba(254, 209, 54, 0.9);
 }
 
+#resume .resume-item .resume-link .resume-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+}
+
+#education .education-item .education-link .education-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
@@ -335,6 +383,15 @@ header.masthead .intro-text .intro-heading {
 #family .family-item .family-link .family-hover:hover {
   opacity: 1;
 }
+
+#resume .resume-item .resume-link .resume-hover:hover {
+  opacity: 1;
+}
+
+#education .education-item .education-link .education-hover:hover {
+  opacity: 1;
+}
+
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 20px;
@@ -380,6 +437,27 @@ header.masthead .intro-text .intro-heading {
   color: white;
 }
 
+#resume .resume-item .resume-link .resume-hover .resume-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+
+#education .education-item .education-link .education-hover .education-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
@@ -397,6 +475,14 @@ header.masthead .intro-text .intro-heading {
   margin-top: -12px;
 }
 
+#resume .resume-item .resume-link .resume-hover .resume-hover-content i {
+  margin-top: -12px;
+}
+
+#education .education-item .education-link .education-hover .education-hover-content i {
+  margin-top: -12px;
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3
 
 #hobbies .hobbies-item .hobbies-link .hobbies-hover .hobbies-hover-content h3
@@ -404,6 +490,10 @@ header.masthead .intro-text .intro-heading {
 #family .family-item .family-link .family-hover .family-hover-content h3
 
 #projects .projects-item .projects-link .projects-hover .projects-hover-content h3
+
+#resume .resume-item .resume-link .resume-hover .resume-hover-content h3
+
+#education .education-item .education-link .education-hover .education-hover-content h3
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
@@ -418,6 +508,14 @@ header.masthead .intro-text .intro-heading {
 }
 
 #projects .projects-item .projects-link .projects-hover .projects-hover-content h4 {
+  margin: 0;
+}
+
+#resume .resume-item .resume-link .resume-hover .resume-hover-content h4 {
+  margin: 0;
+}
+
+#education .education-item .education-link .education-hover .education-hover-content h4 {
   margin: 0;
 }
 
@@ -453,6 +551,22 @@ header.masthead .intro-text .intro-heading {
   background-color: #fff;
 }
 
+#resume .resume-item .resume-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#education .education-item .education-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
 #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
@@ -469,6 +583,16 @@ header.masthead .intro-text .intro-heading {
 }
 
 #projects .projects-item .projects-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#resume .resume-item .resume-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#education .education-item .education-caption h4 {
   margin: 0;
   text-transform: none;
 }
@@ -501,6 +625,20 @@ header.masthead .intro-text .intro-heading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#resume .resume-item .resume-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#education .education-item .education-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 #portfolio * {
   z-index: 2;
 }
@@ -515,6 +653,14 @@ header.masthead .intro-text .intro-heading {
 
 
 #projects * {
+  z-index: 2;
+}
+
+#resume * {
+  z-index: 2;
+}
+
+#education * {
   z-index: 2;
 }
 
@@ -538,6 +684,18 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 767px) {
   #projects .projects-item {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 767px) {
+  #resume .resume-item {
+    margin: 0 0 30px;
+  }
+}
+
+@media (min-width: 767px) {
+  #education .education-item {
     margin: 0 0 30px;
   }
 }
