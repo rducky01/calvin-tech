@@ -127,3 +127,23 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# Logging.
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers':False,
+    'handlers': {
+	'file': {
+	    'level': 'ERROR',
+	    'class': 'logging.FileHandler',
+	    'filename': os.path.join(BASE_DIR, 'log/calvin-tech.err.log'),
+	},
+    },
+    'loggers': {
+	'django': {
+	    'handlers': ['file'],
+	    'level': 'ERROR',
+	    'propagate': True,
+	},
+    },
+}
