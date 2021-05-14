@@ -817,7 +817,7 @@ header.masthead .intro-text .intro-heading {
 
 .timeline > li .timeline-panel {
   position: relative;
-  float: right;
+  float: left;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
@@ -1094,7 +1094,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .iframe-container {
   overflow: hidden;
-  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
   padding-top: 56.25%;
   position: relative;
 }
